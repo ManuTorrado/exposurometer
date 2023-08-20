@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/exposurometer/static/css/main.d81dfa37.css",
-    "main.js": "/exposurometer/static/js/main.a99d04b0.js",
+    "main.css": "/exposurometer/static/css/main.bceb75c7.css",
+    "main.js": "/exposurometer/static/js/main.d75d5ef6.js",
     "static/js/787.ab65db8c.chunk.js": "/exposurometer/static/js/787.ab65db8c.chunk.js",
     "index.html": "/exposurometer/index.html",
-    "main.d81dfa37.css.map": "/exposurometer/static/css/main.d81dfa37.css.map",
-    "main.a99d04b0.js.map": "/exposurometer/static/js/main.a99d04b0.js.map",
+    "main.bceb75c7.css.map": "/exposurometer/static/css/main.bceb75c7.css.map",
+    "main.d75d5ef6.js.map": "/exposurometer/static/js/main.d75d5ef6.js.map",
     "787.ab65db8c.chunk.js.map": "/exposurometer/static/js/787.ab65db8c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d81dfa37.css",
-    "static/js/main.a99d04b0.js"
+    "static/css/main.bceb75c7.css",
+    "static/js/main.d75d5ef6.js"
   ]
 }
