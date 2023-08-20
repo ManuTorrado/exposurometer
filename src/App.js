@@ -1,6 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import {CgScreen} from 'react-icons/cg'
 import { useEffect, useState } from 'react';
+import './App.css'
 
 function App() {
 
@@ -49,23 +50,45 @@ return () => {
 
   },[ip])
   return (
-    <div style={{backgroundColor:'black', color: 'white'}}className="App">
-    
-        <img src={logo} width={64}className="App-logo" alt="logo" />
+    <div style={{backgroundColor: 'white',  height: '100vh', textAlign:'left', display: 'flex',justifyContent: 'center'}}>
 
-        <h5>IP Address</h5>
-        <h5>{ip}</h5>
-        <h5>User Agent</h5>
-        <h5>{window.navigator.userAgent} </h5> <br/>
-        <h5>{window.innerWidth +" x "+window.innerHeight}</h5>
+    <div>
+        <div class="description">
+        <h1>What sites see?</h1>
+        <p>🌐 Ever wondered what information websites gather from your devices? Curious to know which data you're sharing? Dive in and explore now!</p>
+        <button class="calculate">Calculate</button>
+        </div>
+      <div className='sheet' style={{color: 'grey', display:"flex", justifyContent: 'center'}}>
+      <div>
         <h5>{geodata.org}</h5>
         <h5>{geodata.isp}</h5>
         <h5>{geodata.country}</h5>
         <h5>{geodata.city}</h5>
         <h5>{geodata.as}</h5>
-        <noscript>Your browser does not support JavaScript!</noscript>
+
+        <p>Browser Name:  {navigator.appName} </p> 
+<p>Browser Version:  {navigator.appVersion}  </p> 
+<p>Cookies Enabled:  { navigator.cookieEnabled}  </p> 
+<p>Browser Language:   {navigator.language} </p> 
+<p>Browser Online:   {navigator.onLine}  </p> 
+<p>Platform:  {navigator.platform} </p> 
+<h3>User Agent</h3>
+<h5>{window.navigator.userAgent} </h5> <br/>
+        </div>
+        <div>
+        <h3>IP Address</h3>
+        <h5>{ip}</h5>
+       
+        <h3>   <CgScreen/> Screen size </h3>
+        <h5>{window.innerWidth +" x "+window.innerHeight}</h5>
+    
+     
+        </div>
 
     
+        </div>
+        <noscript>Your browser does not support JavaScript!</noscript>    
+    </div>
     </div>
   );
 }
