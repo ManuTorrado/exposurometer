@@ -7,7 +7,9 @@ function App() {
 const [calculation, setCalculation] = useState(false)
 const doCalculation = () => setCalculation(true)
 
+window.onload = ()=>{
 
+}
 
   return (
     <div style={{backgroundColor: 'white',  height: '100vh', textAlign:'left', display: 'flex',justifyContent: 'center'}}>
@@ -16,13 +18,12 @@ const doCalculation = () => setCalculation(true)
         <div className="description">
         <h1>What sites see?</h1>
         <p>🌐 Ever wondered what information websites gather from your devices? Curious to know which data you're sharing? Dive in and explore now!</p>
-        <button onClick={doCalculation} className="calculate">Calculate</button>
+        {calculation ? null : <button onClick={doCalculation} className="calculate">Find out!</button>}
         </div>
-      <div className='sheet' style={{color: 'grey', display:"flex", justifyContent: 'center'}}>
+     
+    {calculation?  <div className='sheet' style={{color: 'grey', justifyContent: 'center'}}><Calculation/> </div>: null}
+  
 
-    {calculation? <Calculation/> : null}
-    
-        </div>
     </div>
     </div>
   );

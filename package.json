@@ -1,5 +1,6 @@
 {
   "name": "exposurometer",
+  "homepage": "https://manutorrado.github.io/exposurometer",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
